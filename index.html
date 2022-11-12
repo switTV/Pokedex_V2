@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <title>Pokedex</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="container-nav">
+            <div class="container-title">
+                <h2 class="header-title">Pokedex</h2>
+            </div>
+
+            <div class="plegable-menu" id="plegable-menu">
+                <div class="plegable-menu-title">
+                    <h3>Gen 3</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                    <div class="plegable-menu-gens" id="plegable-menu-gens">
+                        <div id="gen gen1" class="gen gen1">gen 1</div>
+                        <div id="gen gen2" class="gen gen2">gen 2</div>
+                        <div id="gen gen3" class="gen gen3">gen 3</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="container-pokeCards" class="container-pokeCards">
+            <div id="pokeCard-centered" class="pokeCard-centered">
+                
+                <!-- <div class="pokecard">
+                    
+                    <div class="left-container">
+                        <h2 class="pokeName">Treeko</h2>
+
+                        <div class="container-left-stats">
+                            <h3>hp: 22</h3>
+                            <h3>atk: 45</h3>
+                        </div>
+                    </div>
+
+                    <div class="rgt-container">
+                        <img src="img/252-treecko.png" alt="">
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/nodes.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

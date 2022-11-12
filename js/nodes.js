@@ -1,0 +1,5 @@
+let container_pokeCards = document.getElementById("container-pokeCards")
+let container_centered = document.getElementById("pokeCard-centered")
+let plegable_menu = document.getElementById("plegable-menu")
+let plegable_menu_gens = document.getElementById("plegable-menu-gens")
+let header = document.getElementById("header")

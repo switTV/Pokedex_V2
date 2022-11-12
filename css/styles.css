@@ -1,0 +1,167 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* body {
+    background-image: url(../img/058cc1913cf7d2bd93d6153ad22205f5.png);
+    
+} */
+
+header {
+    width: 100%;
+    
+    position: fixed;
+    z-index: 999;
+    background-color: #315659;
+    color: #C6E0FF;
+    transition: all .3s ;
+}
+
+header .container-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-family: "Raleway";
+
+    
+    width: 100%;
+    height: 50px;
+
+}
+
+.glassmorphism {
+    /* From https://css.glass */
+    backdrop-filter: blur(7px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+
+
+header .container-nav h2 {
+    font-size: 2.4rem;
+}
+
+header .plegable-menu .plegable-menu-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+header .plegable-menu .plegable-menu-title i {
+    margin-left: 5px;
+}
+
+header .plegable-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+header .plegable-menu .plegable-menu-gens{
+    position: absolute;
+    top: 50px;
+    /* right: 20px; */
+    background-color: #315659;
+    width:130px;
+    border-radius: 0px 0px 5px 5px;
+    z-index: 999;
+    display: none;
+    transition: all .3s ;
+}
+
+header .plegable-menu .plegable-menu-gens .gen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-bottom: #C6E0FF .5px solid;
+    opacity: 0.7;
+}
+
+header .plegable-menu .plegable-menu-gens .gen:hover{
+    opacity: 1;
+    font-weight: 600;
+}
+
+
+
+.container-pokeCards {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+}
+.container-pokeCards .pokeCard-centered {
+    width: 100vh;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-top: 50px;
+}
+
+.container-pokeCards .pokeCard-centered .pokecard{
+    width: 140px;
+    height: 90px;
+    background-color: #6f7878;
+    
+    position:relative;
+
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+
+    margin: 10px 5px 0px 5px;
+    
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.container-pokeCards .pokeCard-centered .pokecard h2{
+    font-family: 1.8rem;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    text-shadow: 4px 1px 2px rgba(150, 150, 150, 0.792);
+}
+
+.pokecard .left-container .container-left-stats {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 5px;
+    
+    text-shadow: 4px 1px 2px rgba(150, 150, 150, 0.792);
+}
+
+.pokecard .left-container .container-left-stats h3{
+    margin-bottom: 2.5px;
+    font-family: "Raleway";
+    font-weight: 600;
+}
+
+.container-pokeCards .pokeCard-centered .pokecard img{
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    
+    width: 70px;
+    height: 70px;
+}
